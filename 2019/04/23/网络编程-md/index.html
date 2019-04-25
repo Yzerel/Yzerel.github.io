@@ -79,13 +79,17 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Yezerel">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="HTTP协议 1、什么是HTTP协议：http协议是超文本传输协议的缩写，英文名是Hyper Text Transf Protocol。是从服务器传输文本数据到本地浏览器的传输协议。http是基于TCP/IP通信协议来彻底数据的请求应答协议，工作与客户端（client）——服务器端（server）架构上，浏览器作为http客户端通过url向http服务器端发送所有请求，web服务器根据收到的请求后">
+<meta property="og:type" content="article">
+<meta property="og:title" content="网络编程.md">
+<meta property="og:url" content="http://yoursite.com/2019/04/23/网络编程-md/index.html">
 <meta property="og:site_name" content="Yezerel">
+<meta property="og:description" content="HTTP协议 1、什么是HTTP协议：http协议是超文本传输协议的缩写，英文名是Hyper Text Transf Protocol。是从服务器传输文本数据到本地浏览器的传输协议。http是基于TCP/IP通信协议来彻底数据的请求应答协议，工作与客户端（client）——服务器端（server）架构上，浏览器作为http客户端通过url向http服务器端发送所有请求，web服务器根据收到的请求后">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-04-25T02:49:58.539Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Yezerel">
+<meta name="twitter:title" content="网络编程.md">
+<meta name="twitter:description" content="HTTP协议 1、什么是HTTP协议：http协议是超文本传输协议的缩写，英文名是Hyper Text Transf Protocol。是从服务器传输文本数据到本地浏览器的传输协议。http是基于TCP/IP通信协议来彻底数据的请求应答协议，工作与客户端（client）——服务器端（server）架构上，浏览器作为http客户端通过url向http服务器端发送所有请求，web服务器根据收到的请求后">
 
 
 
@@ -115,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/">
+  <link rel="canonical" href="http://yoursite.com/2019/04/23/网络编程-md/">
 
 
 
 
 
-  <title>Yezerel</title>
+  <title>网络编程.md | Yezerel</title>
   
 
 
@@ -140,8 +144,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -214,9 +217,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -246,9 +249,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/04/23/网络编程-md/" itemprop="url">网络编程.md</a></h1>
+          <h1 class="post-title" itemprop="name headline">网络编程.md</h1>
         
 
         <div class="post-meta">
@@ -298,9 +299,7 @@
       
 
       
-        
-          
-            <p>HTTP协议</p>
+        <p>HTTP协议</p>
 <p>1、什么是HTTP协议：<br>http协议是超文本传输协议的缩写，英文名是Hyper Text Transf Protocol。是从服务器传输文本数据到本地浏览器的传输协议。<br>http是基于TCP/IP通信协议来彻底数据的请求应答协议，工作与客户端（client）——服务器端（server）架构上，浏览器作为http客户端通过url向http服务器端发送所有请求，web服务器根据收到的请求后，向客户端返回响应信息。</p>
 <p>2、HTTP特点：<br>1.简单快速：客户向服务器发送请求的时候，仅需要传送请求方法和路径。请求方法常用的有GET、HEAD、POST<br>2.灵活：HTTP允许传送任意类型的数据对象。传输的类型由Content-Typ加以标记。<br>3.无连接：限制每次链接只处理一次请求。服务器处理完毕一次请求，并收到客户的应答后，即断开链接。</p>
 <p>3、HTTP与HTTPS的区别：<br>HTTPS是HTTP的安全版本，HTTP协议的数据传输是明文的，不安全。HTTPS使用了SSL/TLS协议进行了加密处理。</p>
@@ -338,8 +337,6 @@
 <p>三次握手的目的：为了防止已过期的链接再次传到被连接的主机。<br>如果client发送的链接信息，第一次没有链接到server，client就会再次链接信息到server，此时链接成功并完成数据传输，断开。结果在这个时候client的第一次链接数据到达，server会再次与client链接并等待信息，实际上client已经关闭了链接，server将会处于等待数据状态。所以我们为避免此类发生，采用三次握手方式。</p>
 <p>四次挥手的目的：未保证数据传输的完整性，在client发送第一次释放请求时，client会关闭发送，但还是能接收数据，server在接收请求后会先发送知道要关闭的信息，然后在完成所有报文传输后发送已传输完毕，释放链接信息，client在接收到第二次信息后才开始释放链接，并回复已收到信息。</p>
 
-          
-        
       
     </div>
     
@@ -356,134 +353,28 @@
       
 
       
-
-      
-
       
       
-        <div class="post-eof"></div>
+
       
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/22/FistNight/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="river">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Yezerel">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/04/22/FistNight/" itemprop="url">Fist Night</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-04-22T20:14:36+08:00">
-                2019-04-22
-              </time>
+              <a href="/2019/04/22/FistNight/" rel="next" title="Fist Night">
+                <i class="fa fa-chevron-left"></i> Fist Night
+              </a>
             
+          </div>
 
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <blockquote>
-<p>这是一次测试，记录我生涯的第一篇博客.Yzerel(river):2019.04.22</p>
-</blockquote>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -493,138 +384,11 @@
   </article>
 
 
-    
-      
 
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/22/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="river">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Yezerel">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/04/22/hello-world/" itemprop="url">Hello World</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-04-22T19:13:00+08:00">
-                2019-04-22
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-          
-        
+    <div class="post-spread">
       
     </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
   </div>
-  
-  
-  
-  </article>
-
-
-    
-  </section>
-
-  
 
 
           </div>
@@ -632,6 +396,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -828,6 +596,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
